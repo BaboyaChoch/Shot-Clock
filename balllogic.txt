@@ -1,0 +1,11 @@
+ game_balls[ball_count].draw_circle(win)
+    game_balls[ball_count].update_speed()
+
+    game_balls[ball_count + 1].draw_circle(win)
+    game_balls[ball_count + 1].update_speed()
+
+    game_balls[ball_count + 2].draw_circle(win)
+    game_balls[ball_count + 2].update_speed()
+
+    if (pygame.time.get_ticks() - start_time) % 10 == 0 and all_off_screen(ball_count, ball_count + 1, ball_count + 2):
+        ball_count += 1
