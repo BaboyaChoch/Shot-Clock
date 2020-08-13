@@ -14,6 +14,7 @@ pygame.display.set_icon(pygame.image.load('icon.png'))
 pygame.font.init()
 GAME_FONT = pygame.font.Font('gamera.TTF', 35)
 
+
 #game start and timing variables
 game_start = False  # boolean that controls main loop
 start_time = 0  # Start time for game timer
@@ -27,6 +28,7 @@ MIN_BALL_SPEED = 4
 #game colors
 BLACK = (0, 0, 0)
 ORANGE = (252, 102, 0)
+WHITE  = (255, 255, 255)
 
 #sprites
 HOOP = pygame.image.load('hoop.png')
@@ -217,16 +219,16 @@ def main():
         win.fill(BLACK)
 
         game_over = GAME_FONT.render("Game Over!", True, ORANGE)
-        win.blit(game_over, (215, 80))
+        win.blit(game_over, (215, 50))
 
-        final_score = GAME_FONT.render(F"Final Score: {SCORE} ", True, ORANGE)
-        win.blit(final_score, (185, 170))
+        final_score = GAME_FONT.render(F"Final Score: {SCORE} ", True, WHITE)
+        win.blit(final_score, (185, 130))
 
         new_game = GAME_FONT.render("Press R to Start New Game", True, ORANGE)
-        win.blit(new_game, (50,240))
+        win.blit(new_game, (50,210))
 
         exit_game = GAME_FONT.render("Press ESC to Close Game", True, ORANGE)
-        win.blit(exit_game, (50, 270))
+        win.blit(exit_game, (70, 290))
 
         pygame.display.update()
 
