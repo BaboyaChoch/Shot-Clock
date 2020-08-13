@@ -1,4 +1,4 @@
-#ShotClock
+# ShotClock
 
 ## Inspiration
 
@@ -13,8 +13,8 @@ In ShotClock the fruits are basketballs and the basket is a basketball hoop.
 ## Objective/Rules
 
 The objective of ShotClock is to make as many shots as possible in the alloted 60 seconds countdown. 
-    * A Shot in ShotClock is defined as a falling object, the balls, making contact with the hoop.  
-    * A shot is registed as a point, +1 to the player's score. 
+    *A Shot in ShotClock is defined as a falling object, the balls, making contact with the hoop.  
+    *A shot is registed as a point, +1 to the player's score. 
 
 The hoop is fixed on the x axis, can only move from left to right.
     * Left right movement is controlled by keyboard inputs
