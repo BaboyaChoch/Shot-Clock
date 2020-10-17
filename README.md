@@ -29,10 +29,7 @@ for i in range(4):
         
     game_balls[i].draw_ball(win)
     game_balls[i].update_position()
-        
-    if (hitbox_y) < game_balls[i].y < (hitbox_y + 20) and (hitbox_x) < game_balls[i].x < (hoop_x + 120):
-        SCORE += 1
-        new_ball(i)
+    
 ```
 
 The logic behind the falling objects is the result of a few simple steps (Note: WIDTHxHEIGHT is the window size):
@@ -59,4 +56,22 @@ For this project n = 4 for a screen of size 600x400, so the list of game balls h
 * n > 4  clutters the screen and results in a more overlapping.
     
 Thus, n, the number of balls, is dependant on screen size
+
+##a Scoring
+
+```python
+for i in range(4):
+
+    if game_balls[i].is_off_screen():
+        new_ball(i)
+        
+    game_balls[i].draw_ball(win)
+    game_balls[i].update_position()
+        
+    if (hitbox_y) < game_balls[i].y < (hitbox_y + 20) and (hitbox_x) < game_balls[i].x < (hoop_x + 120):
+        SCORE += 1
+        new_ball(i)
+```
+
+Scoring is determined by the collision of the balls with a defined hitbox of the hoop. This calculated within the loop that updates the ball position because at every time a ball is moved we must check to see if has collided with the hitbox, has a shot been made. 
 
