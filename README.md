@@ -21,6 +21,26 @@ The player has no control over the falling objects
 
 ## Falling Objects(Balls) Logic
 
+```python
+for i in range(4):
+
+            if game_balls[i].is_off_screen():
+                new_ball(i)
+
+            game_balls[i].draw_ball(win)
+            game_balls[i].update_position()
+
+            # if any part of the hoop/platform is touched by a ball as a collision
+            # ball is cleared from the display and new ball appears
+            if (hitbox_y) < game_balls[i].y < (hitbox_y + 20) and (hitbox_x) < \
+                    game_balls[i].x < (hoop_x + 120):
+                    # hitbox is simplified to be 120x20 rectangle starting from the top left corner of the rim
+                    # if a ball falls within this region it is considered a score.
+                SCORE += 1
+                new_ball(i
+
+```
+
 The logic behind the falling objects is the result of a few simple steps (Note: WIDTHxHEIGHT is the window size):
 
 1. At the start, spawn (n) number of balls, from a list of balls, at the top of the screen, y = 0, with random x values on the screen accounting for ball size, x = {20,WIDTH-20}.
