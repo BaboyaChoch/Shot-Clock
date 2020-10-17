@@ -1,7 +1,7 @@
 # ShotClock
 
 
-## Objective/Rules
+## Objective & Rules
 
 The objective of ShotClock is to make as many shots as possible in the alloted 60 seconds countdown. 
 
@@ -21,17 +21,18 @@ The player has no control over the falling objects
 
 ## Falling Objects(Balls) Logic
 
-Falling objects logic is the result of a few simple steps(WIDTHxHEIGHT is the window size):
+The logic behind the falling objects is the result of a few simple steps (Note: WIDTHxHEIGHT is the window size):
 
-    * 1: At the start, spawn (n) number of balls, from a list of balls, at the top of the screen, y = 0, with random x values on the screen accounting for ball size, x = {20,WIDTH-20}.
+1. At the start, spawn (n) number of balls, from a list of balls, at the top of the screen, y = 0, with random x values on the screen accounting for ball size, x = {20,WIDTH-20}.
 
-    * 2: Each ball is spawned with its own speed, and its Y position is updated to make the ball 'fall', ball.y += speed
+2. Each ball is spawned with its own speed, and its Y position is updated to make the ball 'fall', ball.y += speed
 
-    * 3: The ball continues to fall unless it:
-        * (a) Makes contact with the hoop and is a shot (+1 to score).
-        * (b) Goes off screen, ball.y > HEIGHT.
+3. The ball continues to fall unless it:
+    * (a) Makes contact with the hoop and is a shot (+1 to score).
+    
+    * (b) Goes off screen, ball.y > HEIGHT.
 
-    * 4: After the ball is a made shot or goes off screen it is not cleared from the display, but is respawned at the top of the screen as a 'new' ball.
+4. After the ball is a made shot or goes off screen it is not cleared from the display, but is respawned at the top of the screen as a 'new' ball.
     
 What this means is that the falling balls effect is created by the continues looping of the same (n) number of balls.
 
