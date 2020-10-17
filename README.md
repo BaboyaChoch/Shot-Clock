@@ -26,12 +26,13 @@ for i in range(4):
 
     if game_balls[i].is_off_screen():
         new_ball(i)
-        game_balls[i].draw_ball(win)
-        game_balls[i].update_position()
+        
+    game_balls[i].draw_ball(win)
+    game_balls[i].update_position()
         
     if (hitbox_y) < game_balls[i].y < (hitbox_y + 20) and (hitbox_x) < game_balls[i].x < (hoop_x + 120):
         SCORE += 1
-        new_ball(i
+        new_ball(i)
 ```
 
 The logic behind the falling objects is the result of a few simple steps (Note: WIDTHxHEIGHT is the window size):
