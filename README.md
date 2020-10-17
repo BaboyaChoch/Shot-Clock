@@ -13,9 +13,9 @@ The hoop is fixed on the x axis, can only move from left to right.
 
 * Left right movement is controlled by keyboard inputs
     
-** A controls movement to the left
+    * A controls movement to the left
         
-** D controls movement to the right
+    * D controls movement to the right
 
 The player has no control over the falling objects
 
