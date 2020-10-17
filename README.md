@@ -37,14 +37,15 @@ for i in range(4):
 
 The logic behind the falling objects is the result of a few simple steps (Note: WIDTHxHEIGHT is the window size):
 
-1. At the start, spawn (n) number of balls, from a list of balls, at the top of the screen, y = 0, with random x values on the screen accounting for ball size, x = {20,WIDTH-20}.
+1. At the start, spawn (n) number of balls, from a list of balls, at the top of the screen, y = 0. 
+    * Random x position values are generated.
 
-2. Each ball is spawned with its own speed, and its Y position is updated to make the ball 'fall', ball.y += speed
+2. Each ball is spawned with its own speed, and its Y position is updated to make the ball 'fall', ```python ball.y += speed ```
 
 3. The ball continues to fall unless it:
     * (a) Makes contact with the hoop and is a shot (+1 to score).
     
-    * (b) Goes off screen, ball.y > HEIGHT.
+    * (b) Goes off screen, ````python ball.y > HEIGHT. ```
 
 4. After the ball is registered as a made shot or goes off screen it is not cleared from the display, but is respawned at the top of the screen as a 'new' ball.
     
