@@ -1,6 +1,9 @@
 # ShotClock
 
 
+A simple game based on catching fallings objects implemented in Python 3 utilzing Pygame
+
+
 ## Objective & Rules
 
 
