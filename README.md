@@ -83,8 +83,10 @@ for i in range(4):
 
 Scoring is determined by the collision of the balls with a defined hitbox of the hoop. This is calculated within the loop that updates the ball position because every time a ball is moved it may have touched the hitbox, a shot may have been made.
 
-There are two defined hitboxes in ShotClock.
+There are two  hitboxes in ShotClock.
 
 * Each ball sprite has a defined hitbox of a circle with a diameter of length 20 pixels
 
 * The hoop has a 120x20  reactangle around the rim that is deefined as its hitbox. Unlike the ball the whole hoop does not have a hitbox surrounding it. 
+
+![](https://github.com/BaboyaChoch/ShotClock/blob/master/icon.png)
