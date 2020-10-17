@@ -57,7 +57,7 @@ For this project n = 4 for a screen of size 600x400, so the list of game balls h
     
 Thus, n, the number of balls, is dependant on screen size
 
-##a Scoring
+## Scoring Logic && Hitboxes
 
 ```python
 for i in range(4):
@@ -73,5 +73,7 @@ for i in range(4):
         new_ball(i)
 ```
 
-Scoring is determined by the collision of the balls with a defined hitbox of the hoop. This calculated within the loop that updates the ball position because at every time a ball is moved we must check to see if has collided with the hitbox, has a shot been made. 
+Scoring is determined by the collision of the balls with a defined hitbox of the hoop. This is calculated within the loop that updates the ball position because every time a ball is moved it may have touched the hitbox, a shot may have been made.
+
+### Hitboxes
 
