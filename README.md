@@ -3,6 +3,7 @@
 
 ## Objective & Rules
 
+
 The objective of ShotClock is to make as many shots as possible in the alloted 60 seconds countdown. 
 
 * A Shot in ShotClock is defined as a falling object, the balls, making contact with the hoop.
@@ -19,7 +20,9 @@ The hoop is fixed on the x axis, can only move from left to right.
 
 The player has no control over the falling objects
 
+
 ## Falling Objects(Balls) Logic
+
 
 ```python
 for i in range(4):
@@ -57,7 +60,9 @@ For this project n = 4 for a screen of size 600x400, so the list of game balls h
     
 Thus, n, the number of balls, is dependant on screen size
 
+
 ## Scoring Logic && Hitboxes
+
 
 ```python
 for i in range(4):
@@ -75,5 +80,4 @@ for i in range(4):
 
 Scoring is determined by the collision of the balls with a defined hitbox of the hoop. This is calculated within the loop that updates the ball position because every time a ball is moved it may have touched the hitbox, a shot may have been made.
 
-### Hitboxes
 
