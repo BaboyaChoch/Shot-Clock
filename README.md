@@ -32,10 +32,10 @@ The logic behind the falling objects is the result of a few simple steps (Note: 
     
     * (b) Goes off screen, ball.y > HEIGHT.
 
-4. After the ball is a made shot or goes off screen it is not cleared from the display, but is respawned at the top of the screen as a 'new' ball.
+4. After the ball is registered as a made shot or goes off screen it is not cleared from the display, but is respawned at the top of the screen as a 'new' ball.
     
-What this means is that the falling balls effect is created by the continues looping of the same (n) number of balls.
 
+What this means is that the falling balls effect is created by the continues looping of the same (n) number of balls.
 For this project n = 4 for a screen of size 600x400, so list of game balls only as has a length of n, 4.
 
     * n < 4 doesnt fill up the screen enough 
