@@ -87,9 +87,9 @@ There are two  hitboxes in ShotClock.
 
 * Each ball sprite has a defined hitbox of a circle with a diameter of length 20 pixels
 
-* The hoop has a 120x20  reactangle around the rim that is deefined as its hitbox. Unlike the ball the whole hoop does not have a hitbox surrounding it. 
+* The hoop has a 120x20  reactangle around the rim that is deefined as its hitbox. Unlike the ball the whole hoop does not have a hitbox surrounding it. (see below image)
 
-
+![hoop hitbox](https://github.com/BaboyaChoch/images/blob/master/hoop_hitbox.png)
 
 ## Demo
 
