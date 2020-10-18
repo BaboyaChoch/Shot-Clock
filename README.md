@@ -64,7 +64,7 @@ For this project n = 4 for a screen of size 600x400, so the list of game balls h
 Thus, n, the number of balls, is dependant on screen size
 
 
-## Scoring Logic && Hitboxes
+## Scoring Logic & Hitboxes
 
 
 ```python
@@ -93,7 +93,7 @@ There are two  hitboxes in ShotClock.
 
 ## Demo
 
-[(![demo](https://media4.giphy.com/media/LAD2kVM5phCSDQRwT6/giphy.gif))](google.com)
+[(![demo](https://media4.giphy.com/media/LAD2kVM5phCSDQRwT6/giphy.gif))]((http://google.com)
 
 Click for full demo
 
