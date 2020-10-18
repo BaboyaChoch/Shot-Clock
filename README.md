@@ -1,4 +1,4 @@
-# ShotClock
+# Shot Clock
 
 
 A simple game based on catching fallings objects implemented in Python 3 utilzing Pygame
@@ -7,9 +7,9 @@ A simple game based on catching fallings objects implemented in Python 3 utilzin
 ## Objective & Rules
 
 
-The objective of ShotClock is to make as many shots as possible in the alloted 60 seconds countdown. 
+The objective of Shot Clock is to make as many shots as possible in the alloted 60 seconds countdown. 
 
-* A Shot in ShotClock is defined as a falling object, the balls, making contact with the hoop.
+* A Shot in Shot Clock is defined as a falling object, the balls, making contact with the hoop.
     
 * A shot is registed as a point, +1 to the player's score. 
 
@@ -83,7 +83,7 @@ for i in range(4):
 
 Scoring is determined by the collision of the balls with a defined hitbox of the hoop. This is calculated within the loop that updates the ball position because every time a ball is moved it may have touched the hitbox, a shot may have been made.
 
-There are two  hitboxes in ShotClock.
+There are two  hitboxes in Shot Clock.
 
 * The whole sprite is the hitbbox for each ball.  
 
