@@ -93,6 +93,8 @@ There are two  hitboxes in ShotClock.
 
 ## Demo
 
-Click for full 1 minute demo.
+[![demo](https://media4.giphy.com/media/LAD2kVM5phCSDQRwT6/giphy.gif)](https:\\google.com)
 
-[![demo](https://media4.giphy.com/media/LAD2kVM5phCSDQRwT6/giphy.gif)](google.com)
+Click for full demo
+
+
