@@ -89,4 +89,8 @@ There are two  hitboxes in ShotClock.
 
 * The hoop has a 120x20  reactangle around the rim that is deefined as its hitbox. Unlike the ball the whole hoop does not have a hitbox surrounding it. 
 
-![](https://github.com/BaboyaChoch/ShotClock/blob/master/icon.png)
+
+
+## Demo
+
+![demo](https://media4.giphy.com/media/LAD2kVM5phCSDQRwT6/giphy.gif)
